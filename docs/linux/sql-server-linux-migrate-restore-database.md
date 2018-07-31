@@ -193,5 +193,11 @@ In this tutorial, you learned how to back up a database on Windows and move it t
 
 Next, explore other migration scenarios for SQL Server on Linux. 
 
+In case of failed to restore database named with '-', please be informed that this is limitation of sqlcmd to parse command RESTORE DATABASE named with '-'. 
+
+The solution is: 
+1. Go back to SQL Server on Windows to change database name to be without '-'
+2. Back up particular database then restore at SQL Server on Linux.
+
 > [!div class="nextstepaction"]
 >[Migrate databases to SQL Server on Linux](sql-server-linux-migrate-overview.md)
